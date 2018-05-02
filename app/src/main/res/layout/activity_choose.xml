@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity_choose">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/title_background_color"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn_chose_type_place_back"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="返回"
+            android:background="@color/title_background_color"
+            android:drawableLeft="@drawable/btn_back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_chose_type_place_title"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.example.lenovo.nongjiyun_c.Util.FlexibleListView
+        android:id="@+id/lv_chose_type_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.lenovo.nongjiyun_c.Util.FlexibleListView>
+</LinearLayout>
