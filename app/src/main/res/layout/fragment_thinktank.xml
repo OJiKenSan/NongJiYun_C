@@ -3,12 +3,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Fragment_thinktank">
+    tools:context=".Fragment.Fragment_thinktank"
+    android:background="#E0E0E0"
+    android:orientation="horizontal">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这里是农技耘的知识库" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff2dc667"
+                android:gravity="center"
+                android:text="知识库"
+                android:textColor="#ffff"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="25dp"
+                    android:drawableTop="@drawable/icon_zuwu_gaitubao"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="作物品种库" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableTop="@drawable/icon_zhibao_gaitubao"
+                    android:background="#ffff"
+                    android:text="植保库"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawablePadding="25dp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/icon_chuqin_gaitubao"
+                    android:button="@null"
+                    android:background="#ffff"
+                    android:text="畜禽品种库"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableTop="@drawable/icon_zhutui_gaitubao"
+                    android:text="主推技术库"
+                    android:background="#ffff"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:drawablePadding="25dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="25dp"
+                    android:drawableTop="@drawable/icon_zjtx_gaitubao"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="产业技术体系专家" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
