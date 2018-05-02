@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c;
+package com.example.lenovo.nongjiyun_c.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.lenovo.nongjiyun_c.Activity.Activity_login;
+import com.example.lenovo.nongjiyun_c.R;
 import com.example.lenovo.nongjiyun_c.Util.ToastMessage;
 
 public class Activity_resetpassword extends AppCompatActivity {

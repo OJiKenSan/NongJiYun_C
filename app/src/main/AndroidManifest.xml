@@ -37,7 +37,7 @@
         <activity android:name=".Activity.Activity_validate" />
         <activity android:name=".Activity.Activity_reist" />
         <activity android:name=".Activity.Activity_choose" />
-        <activity android:name=".Activity_resetpassword"></activity>
+        <activity android:name=".Activity.Activity_resetpassword"></activity>
     </application>
 
 </manifest>

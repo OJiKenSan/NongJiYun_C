@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.lenovo.nongjiyun_c.Activity_resetpassword;
 import com.example.lenovo.nongjiyun_c.R;
 import com.example.lenovo.nongjiyun_c.Util.ToastMessage;
 
