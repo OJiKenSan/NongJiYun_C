@@ -13,7 +13,7 @@ import com.example.lenovo.nongjiyun_c.Fragment.Fragment_mine;
 import com.example.lenovo.nongjiyun_c.Fragment.Fragment_questions;
 import com.example.lenovo.nongjiyun_c.Fragment.Fragment_thinktank;
 import com.example.lenovo.nongjiyun_c.R;
-
+//ssk
 public class Activity_Main extends AppCompatActivity {
     private RadioGroup mNavigation;
     private Fragment_home fragment_home;
