@@ -20,7 +20,7 @@ public class Activity_welcome extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.activity_welcome);
 
-
+//1
      handler.sendEmptyMessageDelayed(0,3000);
     }
     private Handler handler = new Handler() {
