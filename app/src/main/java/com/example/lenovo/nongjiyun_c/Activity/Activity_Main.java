@@ -5,6 +5,7 @@ import android.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.RadioGroup;
 
 import com.example.lenovo.nongjiyun_c.Fragment.Fragment_exchange;
@@ -13,7 +14,7 @@ import com.example.lenovo.nongjiyun_c.Fragment.Fragment_mine;
 import com.example.lenovo.nongjiyun_c.Fragment.Fragment_questions;
 import com.example.lenovo.nongjiyun_c.Fragment.Fragment_thinktank;
 import com.example.lenovo.nongjiyun_c.R;
-//ssk
+
 public class Activity_Main extends AppCompatActivity {
     private RadioGroup mNavigation;
     private Fragment_home fragment_home;
@@ -25,6 +26,8 @@ public class Activity_Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+      /*  getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.activity__main);
         android.support.v4.app.FragmentManager fm=getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction ft=fm.beginTransaction();
