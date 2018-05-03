@@ -3,16 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Fragment_questions">
+    tools:context=".Fragment.Fragment_questions"
+    android:background="#E0E0E0"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="55dp"
+        android:background="#ff2dc667">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="快速提问"/>
+            android:layout_height="match_parent"
+            android:text="快速提问"
+            android:textSize="30dp"
+            android:textColor="#ffff"
+            android:gravity="center"/>
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:background="@drawable/shapecircle"
+            android:drawableStart="@drawable/btn_questions_selected"
+            android:text="快速提问"
+            android:textColor="#ffff"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
 
 </FrameLayout>
