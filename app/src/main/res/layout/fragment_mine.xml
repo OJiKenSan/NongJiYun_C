@@ -3,263 +3,282 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Fragment_mine"
-    android:background="#E0E0E0">
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".Fragment.Fragment_mine">
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="55dp"
+        android:background="#ff2dc667">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#ffff"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="#ff2dc667">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="我的"
-                    android:textSize="30dp"
-                    android:textColor="#ffff"
-                    android:gravity="center"/>
+            android:layout_marginTop="5dp"
+            android:background="#ffff">
 
-            </LinearLayout>
-
-            <LinearLayout
+            <Button
+                android:id="@+id/btn_mine_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#ffff"
-                android:layout_marginTop="5dp">
-                <Button
-                    android:id="@+id/btn_mine_login"
-                    android:drawableLeft="@drawable/icon_default_head"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="点击头像登录"
-                    android:background="#ffff"
-                    android:gravity="left|center"
-                    android:padding="15dp"
-                    android:drawablePadding="15dp"/>
+                android:drawableLeft="@drawable/icon_default_head"
+                android:drawablePadding="15dp"
+                android:gravity="left|center"
+                android:hint="点击头像登录"
+                android:padding="15dp" />
 
-            </LinearLayout>
-            <LinearLayout
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="1"
+                android:background="#ffff"
+                android:drawablePadding="17dp"
+                android:drawableTop="@drawable/icon_personal_04"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="连续登录0天" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="1"
+                android:background="#ffff"
+                android:drawablePadding="17dp"
+                android:drawableTop="@drawable/icon_personal_02"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0积分" />
+
+            <TextView
+                android:id="@+id/tv_mine_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffff"
+                android:drawablePadding="17dp"
+                android:drawableTop="@drawable/icon_personal_03"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="积分商城" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4.5dp">
-                <TextView
-                    android:drawablePadding="17dp"
-                    android:padding="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="连续登录0天"
-                    android:gravity="center"
-                    android:drawableTop="@drawable/icon_personal_04"
-                    android:background="#ffff"
-                    android:layout_weight="1"
-                    android:layout_marginRight="1.5dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0积分"
-                    android:drawableTop="@drawable/icon_personal_02"
-                    android:background="#ffff"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:drawablePadding="17dp"
-                    android:layout_marginRight="1.5dp"
-                    android:padding="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="17dp"
-                    android:text="积分商城"
-                    android:drawableTop="@drawable/icon_personal_03"
-                    android:background="#ffff"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="10dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <RadioGroup
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4.5dp">
-                    <RadioButton
-                        android:drawablePadding="15dp"
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="我的提问"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:background="#ffff"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/icon_personal_06"/>
-                    <RadioButton
-                        android:drawablePadding="15dp"
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="我的回答"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/icon_personal_07"
-                        android:background="#ffff"/>
-                    <RadioButton
-                        android:drawablePadding="15dp"
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="我的交流"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:background="#ffff"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/btn_exchange_selected"/>
-                    <RadioButton
-                        android:drawablePadding="15dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="我的收藏"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/icon_personal_01"
-                        android:background="#ffff"/>
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1.5dp"
+                android:layout_marginTop="4.5dp"
                 android:orientation="horizontal">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_personal_06"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的提问" />
 
-                    <RadioButton
-
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="1.5dp"
-                        android:drawablePadding="10dp"
-                        android:background="#ffff"
-                        android:button="@null"
-                        android:drawableTop="@drawable/icon_guanzhu"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="我的关注"
-                        android:layout_weight="1"/>
-
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="1.5dp"
-                        android:drawablePadding="10dp"
-                        android:background="#ffff"
-                        android:button="@null"
-                        android:drawableTop="@drawable/icon_gongqiu"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="我的供求"
-                        android:layout_weight="1"/>
-
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:drawablePadding="10dp"
-                        android:background="#ffff"
-                        android:button="@null"
-                        android:drawableTop="@drawable/icon_teacher"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:layout_weight="1"
-                        android:text="我的培训班" />
-
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:button="@null"
-                       />
-                </RadioGroup>
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <RadioGroup
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
+                <RadioButton
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4.5dp">
-                    <RadioButton
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="系统设置"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:background="#ffff"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/icon_personal_11"
-                        android:drawablePadding="10dp"/>
-                    <RadioButton
-                        android:drawablePadding="10dp"
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="意见反馈"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/ic_feedback"
-                        android:background="#ffff"/>
-                    <RadioButton
-                        android:drawablePadding="10dp"
-                        android:layout_marginRight="1.5dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="分享农技耘"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:background="#ffff"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/ic_share"/>
-                    <RadioButton
-                        android:drawablePadding="10dp"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:text="我的二维码"
-                        android:layout_weight="1"
-                        android:button="@null"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/icon_personal_12"
-                        android:background="#ffff"/>
-                </RadioGroup>
-            </LinearLayout>
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_personal_07"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的回答" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/btn_exchange_selected"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的交流" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/icon_personal_01"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的收藏" />
+            </RadioGroup>
+
         </LinearLayout>
-    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.5dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_guanzhu"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的关注" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_gongqiu"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的供求" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_teacher"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的培训班" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_personal_11"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="系统设置" />
+
+                <RadioButton
+                    android:id="@+id/rb_mine_response"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_feedback"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="意见反馈" />
+
+                <RadioButton
+                    android:id="@+id/rb_mine_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_share"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="分享农技耘" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/icon_personal_12"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="我的二维码" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
 
 </FrameLayout>

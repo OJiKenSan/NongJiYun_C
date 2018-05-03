@@ -31,13 +31,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Activity_welcome" />
-        <activity android:name=".Activity.Activity_leadpage" />
-        <activity android:name=".Activity.Activity_login" />
-        <activity android:name=".Activity.Activity_validate" />
-        <activity android:name=".Activity.Activity_reist" />
-        <activity android:name=".Activity.Activity_choose" />
-        <activity android:name=".Activity.Activity_resetpassword"></activity>
+        <activity android:name=".Activity.WelcomeActivity" />
+        <activity android:name=".Activity.LeadPageActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.ValidateActivity" />
+        <activity android:name=".Activity.ReistActivity" />
+        <activity android:name=".Activity.ChooseActivity" />
+        <activity android:name=".Activity.ResetPasswordActivity" />
+        <activity android:name=".Activity.ResponseActivity"></activity>
     </application>
 
 </manifest>
