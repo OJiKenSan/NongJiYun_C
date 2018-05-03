@@ -6,9 +6,13 @@
     tools:context=".Fragment.Fragment_questions">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这里是农技耘的 快速提问" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="快速提问"/>
+    </LinearLayout>
 
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Model;
+package com.example.lenovo.nongjiyun.Model;
 
 import cn.bmob.v3.BmobObject;
 

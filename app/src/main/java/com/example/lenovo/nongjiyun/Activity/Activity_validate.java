@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
 import android.Manifest;
 import android.content.Context;
@@ -17,8 +17,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.lenovo.nongjiyun_c.R;
-import com.example.lenovo.nongjiyun_c.Util.ToastMessage;
+import com.example.lenovo.nongjiyun.R;
+import com.example.lenovo.nongjiyun.Util.ToastMessage;
 
 import cn.bmob.sms.BmobSMS;
 import cn.bmob.sms.exception.BmobException;

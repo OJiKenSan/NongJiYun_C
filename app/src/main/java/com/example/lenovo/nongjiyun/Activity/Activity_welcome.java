@@ -1,15 +1,13 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.WindowManager;
 
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.R;
 
 public class Activity_welcome extends AppCompatActivity {
 
@@ -36,7 +34,7 @@ public class Activity_welcome extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }else{
-                Intent intent = new Intent(Activity_welcome.this, Activity_Main.class);
+                Intent intent = new Intent(Activity_welcome.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -53,7 +51,7 @@ public class Activity_welcome extends AppCompatActivity {
                  finish();
             return true;
         }else{
-            Intent intent = new Intent(Activity_welcome.this, Activity_Main.class);
+            Intent intent = new Intent(Activity_welcome.this, MainActivity.class);
             startActivity(intent);
             finish();
             return false;

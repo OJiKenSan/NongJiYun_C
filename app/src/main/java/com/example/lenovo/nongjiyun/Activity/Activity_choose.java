@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,12 +9,12 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.lenovo.nongjiyun_c.Adapter.ChoosePlaceAdapter;
-import com.example.lenovo.nongjiyun_c.Adapter.ChooseTypeAdapter;
-import com.example.lenovo.nongjiyun_c.Model.PlaceItem;
-import com.example.lenovo.nongjiyun_c.Model.TypeItem;
-import com.example.lenovo.nongjiyun_c.R;
-import com.example.lenovo.nongjiyun_c.Util.FlexibleListView;
+import com.example.lenovo.nongjiyun.Adapter.ChoosePlaceAdapter;
+import com.example.lenovo.nongjiyun.Adapter.ChooseTypeAdapter;
+import com.example.lenovo.nongjiyun.Model.PlaceItem;
+import com.example.lenovo.nongjiyun.Model.TypeItem;
+import com.example.lenovo.nongjiyun.R;
+import com.example.lenovo.nongjiyun.Util.FlexibleListView;
 
 import java.util.List;
 

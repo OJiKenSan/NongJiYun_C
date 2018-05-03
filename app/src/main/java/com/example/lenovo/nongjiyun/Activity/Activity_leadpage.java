@@ -1,17 +1,15 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
 import android.content.Intent;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.R;
 
 public class Activity_leadpage extends AppCompatActivity {
 private ViewPager vp_welcome_guide;
@@ -58,7 +56,7 @@ private int imags[]={R.drawable.ic_guide_01,R.drawable.ic_guide_02,R.drawable.ic
         btn_welcome_visi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                   startActivity(new Intent(Activity_leadpage.this,Activity_Main.class));
+                   startActivity(new Intent(Activity_leadpage.this,MainActivity.class));
                    finish();
             }
         });

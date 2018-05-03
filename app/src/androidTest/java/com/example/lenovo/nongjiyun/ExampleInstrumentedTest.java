@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c;
+package com.example.lenovo.nongjiyun;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

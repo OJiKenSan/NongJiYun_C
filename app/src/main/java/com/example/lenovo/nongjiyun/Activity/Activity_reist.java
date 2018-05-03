@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.lenovo.nongjiyun_c.R;
-import com.example.lenovo.nongjiyun_c.Util.ToastMessage;
+import com.example.lenovo.nongjiyun.R;
+import com.example.lenovo.nongjiyun.Util.ToastMessage;
 
 public class Activity_reist extends AppCompatActivity {
     private Button btn_phone_reist_back;

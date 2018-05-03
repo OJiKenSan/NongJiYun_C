@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Fragment;
+package com.example.lenovo.nongjiyun.Fragment;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.R;
 
 /**
  * A simple {@link Fragment} subclass.

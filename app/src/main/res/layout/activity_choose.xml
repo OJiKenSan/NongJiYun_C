@@ -32,10 +32,10 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <com.example.lenovo.nongjiyun_c.Util.FlexibleListView
+    <com.example.lenovo.nongjiyun.Util.FlexibleListView
         android:id="@+id/lv_chose_type_place"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </com.example.lenovo.nongjiyun_c.Util.FlexibleListView>
+    </com.example.lenovo.nongjiyun.Util.FlexibleListView>
 </LinearLayout>

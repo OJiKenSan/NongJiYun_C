@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Adapter;
+package com.example.lenovo.nongjiyun.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.lenovo.nongjiyun_c.Model.PlaceItem;
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.Model.PlaceItem;
+import com.example.lenovo.nongjiyun.R;
 
 
 import java.util.List;

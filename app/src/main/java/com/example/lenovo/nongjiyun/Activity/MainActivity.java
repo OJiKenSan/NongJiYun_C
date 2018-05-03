@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Activity;
+package com.example.lenovo.nongjiyun.Activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.RadioGroup;
 
-import com.example.lenovo.nongjiyun_c.Fragment.Fragment_exchange;
-import com.example.lenovo.nongjiyun_c.Fragment.Fragment_home;
-import com.example.lenovo.nongjiyun_c.Fragment.Fragment_mine;
-import com.example.lenovo.nongjiyun_c.Fragment.Fragment_questions;
-import com.example.lenovo.nongjiyun_c.Fragment.Fragment_thinktank;
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.Fragment.Fragment_exchange;
+import com.example.lenovo.nongjiyun.Fragment.Fragment_home;
+import com.example.lenovo.nongjiyun.Fragment.Fragment_mine;
+import com.example.lenovo.nongjiyun.Fragment.Fragment_questions;
+import com.example.lenovo.nongjiyun.Fragment.Fragment_thinktank;
+import com.example.lenovo.nongjiyun.R;
 
-public class Activity_Main extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private RadioGroup mNavigation;
     private Fragment_home fragment_home;
     private Fragment_exchange fragment_exchange;

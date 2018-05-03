@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Fragment;
+package com.example.lenovo.nongjiyun.Fragment;
 
 
 import android.os.Bundle;
@@ -7,15 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment_questions extends Fragment {
+public class Fragment_exchange extends Fragment {
 
 
-    public Fragment_questions() {
+    public Fragment_exchange() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Fragment_questions extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_questions, container, false);
+        return inflater.inflate(R.layout.fragment_exchange, container, false);
     }
 
 }

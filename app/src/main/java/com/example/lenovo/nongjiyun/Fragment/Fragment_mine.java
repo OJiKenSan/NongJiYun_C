@@ -1,4 +1,4 @@
-package com.example.lenovo.nongjiyun_c.Fragment;
+package com.example.lenovo.nongjiyun.Fragment;
 
 
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.lenovo.nongjiyun_c.Activity.Activity_login;
-import com.example.lenovo.nongjiyun_c.R;
+import com.example.lenovo.nongjiyun.Activity.Activity_login;
+import com.example.lenovo.nongjiyun.R;
 
 /**
  * A simple {@link Fragment} subclass.
