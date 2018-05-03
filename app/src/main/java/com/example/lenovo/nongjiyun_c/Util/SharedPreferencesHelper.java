@@ -63,7 +63,7 @@ public class SharedPreferencesHelper {
     public Boolean contain(String key) {
         return sharedPreferences.contains(key);
     }
-
+//
     //返回所有的键值对
     public Map<String, ?> getAll() {
         return sharedPreferences.getAll();
