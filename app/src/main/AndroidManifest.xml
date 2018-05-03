@@ -40,7 +40,8 @@
         <activity android:name=".Activity.ResetPasswordActivity" />
         <activity android:name=".Activity.ResponseActivity" />
         <activity android:name=".Activity.InstallActivity" />
-        <activity android:name=".Activity.AboutActivity"></activity>
+        <activity android:name=".Activity.AboutActivity" />
+        <activity android:name=".Activity.MyDataActivity"></activity>
     </application>
 
 </manifest>
