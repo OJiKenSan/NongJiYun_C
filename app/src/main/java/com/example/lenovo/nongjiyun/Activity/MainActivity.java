@@ -1,27 +1,24 @@
 package com.example.lenovo.nongjiyun.Activity;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.widget.RadioGroup;
 
-import com.example.lenovo.nongjiyun.Fragment.Fragment_exchange;
-import com.example.lenovo.nongjiyun.Fragment.Fragment_home;
-import com.example.lenovo.nongjiyun.Fragment.Fragment_mine;
-import com.example.lenovo.nongjiyun.Fragment.Fragment_questions;
-import com.example.lenovo.nongjiyun.Fragment.Fragment_thinktank;
+import com.example.lenovo.nongjiyun.Fragment.ExchangeFragment;
+import com.example.lenovo.nongjiyun.Fragment.HomeFragment;
+import com.example.lenovo.nongjiyun.Fragment.MineFragment;
+import com.example.lenovo.nongjiyun.Fragment.QuestionsFragment;
+import com.example.lenovo.nongjiyun.Fragment.ThinkTankFragment;
 import com.example.lenovo.nongjiyun.R;
 
 public class MainActivity extends AppCompatActivity {
     private RadioGroup mNavigation;
-    private Fragment_home fragment_home;
-    private Fragment_exchange fragment_exchange;
-    private Fragment_mine fragment_mine;
-    private Fragment_thinktank fragment_thinktank;
-    private Fragment_questions fragment_questions;
+    private HomeFragment homeFragment_;
+    private ExchangeFragment exchangeFragment_;
+    private MineFragment mineFragment_;
+    private ThinkTankFragment thinkTankFragment_;
+    private QuestionsFragment questionsFragment_;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity__main);
         android.support.v4.app.FragmentManager fm=getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction ft=fm.beginTransaction();
-        ft.add(R.id.main_frame,new Fragment_home());
+        ft.add(R.id.main_frame,new HomeFragment());
         ft.commit();
         mNavigation = (RadioGroup) findViewById(R.id.rg_btn_navigation);
         mNavigation.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -39,35 +36,35 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.rb_bottom_navigation_home:
-                        if (fragment_home == null) {
-                            fragment_home = new Fragment_home();
+                        if (homeFragment_ == null) {
+                            homeFragment_ = new HomeFragment();
                         }
-                        changeFragment(fragment_home);
+                        changeFragment(homeFragment_);
                         break;
                     case R.id.rb_bottom_navigation_thinktank:
-                        if (fragment_thinktank == null) {
-                            fragment_thinktank = new Fragment_thinktank();
+                        if (thinkTankFragment_ == null) {
+                            thinkTankFragment_ = new ThinkTankFragment();
                         }
-                        changeFragment(fragment_thinktank);
+                        changeFragment(thinkTankFragment_);
 
                         break;
                     case R.id.rb_bottom_navigation_questions:
-                        if (fragment_questions == null) {
-                            fragment_questions = new Fragment_questions();
+                        if (questionsFragment_ == null) {
+                            questionsFragment_ = new QuestionsFragment();
                         }
-                        changeFragment(fragment_questions);
+                        changeFragment(questionsFragment_);
                         break;
                     case R.id.rb_bottom_navigation_exchange:
-                        if (fragment_exchange == null) {
-                            fragment_exchange = new Fragment_exchange();
+                        if (exchangeFragment_ == null) {
+                            exchangeFragment_ = new ExchangeFragment();
                         }
-                        changeFragment(fragment_exchange);
+                        changeFragment(exchangeFragment_);
                         break;
                     case R.id.rb_bottom_navigation_mine:
-                        if (fragment_mine == null) {
-                            fragment_mine = new Fragment_mine();
+                        if (mineFragment_ == null) {
+                            mineFragment_ = new MineFragment();
                         }
-                        changeFragment(fragment_mine);
+                        changeFragment(mineFragment_);
                         break;
                 }
             }

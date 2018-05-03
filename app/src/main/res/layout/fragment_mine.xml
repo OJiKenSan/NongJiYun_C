@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#E0E0E0"
     android:orientation="vertical"
-    tools:context=".Fragment.Fragment_mine">
+    tools:context=".Fragment.MineFragment">
 
 
     <LinearLayout
@@ -225,6 +225,7 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/rb_mine_install"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="1.5dp"
