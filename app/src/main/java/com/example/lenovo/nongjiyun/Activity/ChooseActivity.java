@@ -14,7 +14,7 @@ import com.example.lenovo.nongjiyun.Adapter.ChooseTypeAdapter;
 import com.example.lenovo.nongjiyun.Model.PlaceItem;
 import com.example.lenovo.nongjiyun.Model.TypeItem;
 import com.example.lenovo.nongjiyun.R;
-import com.example.lenovo.nongjiyun.Util.FlexibleListView;
+import com.example.lenovo.nongjiyun.view.FlexibleListView;
 
 import java.util.List;
 

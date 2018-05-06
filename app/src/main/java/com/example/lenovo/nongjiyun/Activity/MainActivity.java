@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         android.support.v4.app.FragmentTransaction ft=fm.beginTransaction();
         ft.add(R.id.main_frame,new HomeFragment());
         ft.commit();
+        //
         mNavigation = (RadioGroup) findViewById(R.id.rg_btn_navigation);
         mNavigation.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
