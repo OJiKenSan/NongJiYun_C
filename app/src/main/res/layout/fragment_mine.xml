@@ -9,23 +9,27 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:background="@color/title_background_color"
+        android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="#ff2dc667">
-
+        android:layout_height="50dp">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/tv_phne_validate_title"
+ android:layout_gravity="center_vertical"
             android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
             android:text="我的"
-            android:textColor="#ffff"
-            android:textSize="30dp" />
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
 
     <LinearLayout
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
