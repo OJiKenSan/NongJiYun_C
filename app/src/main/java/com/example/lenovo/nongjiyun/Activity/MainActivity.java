@@ -1,8 +1,12 @@
 package com.example.lenovo.nongjiyun.Activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.lenovo.nongjiyun.Fragment.ExchangeFragment;
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         android.support.v4.app.FragmentTransaction ft=fm.beginTransaction();
         ft.add(R.id.main_frame,new HomeFragment());
         ft.commit();
+        booleantag();
         //
         mNavigation = (RadioGroup) findViewById(R.id.rg_btn_navigation);
         mNavigation.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -72,11 +77,23 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void booleantag() {
+        Intent i=getIntent();
+       if (i.hasExtra("changetag")){
+
+            changeFragment(new ExchangeFragment());
+          RadioButton rb_bottom_navigation_exchange= (RadioButton) findViewById(R.id.rb_bottom_navigation_exchange);
+                    rb_bottom_navigation_exchange.setChecked(true);
+        };
+    }
+
+
     private void changeFragment(Fragment fragment) {
         android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.main_frame, fragment);
         ft.commit();
     }
+
 
 }
