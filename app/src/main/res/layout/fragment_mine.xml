@@ -107,7 +107,7 @@
                 <RadioButton
                     android:id="@+id/rb_mine_ask"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="1.5dp"
                     android:layout_weight="1"
                     android:background="#ffff"
@@ -121,7 +121,7 @@
                 <RadioButton
                     android:id="@+id/rb_mine_answer"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="1.5dp"
                     android:layout_weight="1"
                     android:background="#ffff"
@@ -133,8 +133,9 @@
                     android:text="我的回答" />
 
                 <RadioButton
+
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="1.5dp"
                     android:layout_weight="1"
                     android:background="#ffff"
@@ -148,7 +149,7 @@
                 <RadioButton
                     android:id="@+id/rd_mine_collect"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="#ffff"
                     android:button="@null"
@@ -212,6 +213,12 @@
                     android:text="我的培训班" />
 
                 <RadioButton
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="#ffff"
+                     android:drawableTop="@drawable/icon_personal_08"
+                    android:text="推广日志"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"

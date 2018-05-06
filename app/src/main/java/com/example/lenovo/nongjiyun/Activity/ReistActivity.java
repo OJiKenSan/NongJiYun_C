@@ -7,8 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.lenovo.nongjiyun.Model.User;
 import com.example.lenovo.nongjiyun.R;
 import com.example.lenovo.nongjiyun.Util.ToastMessage;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ReistActivity extends AppCompatActivity {
     private Button btn_phone_reist_back;
@@ -38,15 +42,18 @@ public class ReistActivity extends AppCompatActivity {
         initFilter();
     }
 
-    private void initFilter() {
+    private void initFilter()  {
         if (et_phone_userreiste_name.length()!=0){
            if (et_phone_userreiste_password.length()!=0){
                if (et_phone_userreiste_password_again.getText().toString().equals(et_phone_userreiste_password.getText().toString())){
                    if (btn_phone_userreister_type.getText().toString()!="选择类型"){
                        if (btn_phone_userreister_place.getText().toString()!="请选择地址"){
                            //在这里保存数据！！！！！！！！！！！！！！！！！！！！！！！！！！！
-                           Intent i=new Intent(ReistActivity.this,LoginActivity.class);
-                           startActivity(i);
+                           try {
+                               sendJson();
+                           } catch (JSONException e) {
+                               e.printStackTrace();
+                           }
                        }else {
                            ToastMessage.initToastMessage("请选择地址",this);
                        }
@@ -62,6 +69,21 @@ public class ReistActivity extends AppCompatActivity {
         }else{
             ToastMessage.initToastMessage("请填写姓名",this);
         }
+    }
+
+    private void sendJson() throws JSONException {
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("nickName",et_phone_userreiste_name.getText().toString());
+        jsonObject.put("phone",et_phone_userreister_phone.getText().toString());
+        jsonObject.put("password",et_phone_userreiste_password.getText().toString());
+        jsonObject.put("address",btn_phone_userreister_place.getText().toString());
+        jsonObject.put("identity",btn_phone_userreister_type.getText().toString());
+
+
+
+        Intent i=new Intent(ReistActivity.this,LoginActivity.class);
+        startActivity(i);
+        ToastMessage.initToastMessage("注册成功",ReistActivity.this);
     }
 
     private void initgetIntent() {

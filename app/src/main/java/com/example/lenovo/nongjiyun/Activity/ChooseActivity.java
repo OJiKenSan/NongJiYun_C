@@ -44,7 +44,8 @@ public class ChooseActivity extends AppCompatActivity {
         tv_choose_type_place_title.setText(titlename);
 
         if (titlename.equals("选择类型")) {
-            BmobQuery query = new BmobQuery();
+
+          /*  BmobQuery query = new BmobQuery();
             query.findObjects(new FindListener<TypeItem>() {
                 @Override
                 public void done(final List<TypeItem> list, BmobException e) {
@@ -70,15 +71,15 @@ public class ChooseActivity extends AppCompatActivity {
                                 finish();
                             }
                         });
-                   /* mFlexibleListView.setAdapter(new ChooseTypeAdapter(Activity_chose_type_place.this,list));
-                    SimpleAdapter simpleAdapter=new SimpleAdapter(this,list,new String[]{""})*/
+                   *//* mFlexibleListView.setAdapter(new ChooseTypeAdapter(Activity_chose_type_place.this,list));
+                    SimpleAdapter simpleAdapter=new SimpleAdapter(this,list,new String[]{""})*//*
 
                     }
 
                 }
 
 
-            });
+            });*/
 
         } else {
             BmobQuery query = new BmobQuery();

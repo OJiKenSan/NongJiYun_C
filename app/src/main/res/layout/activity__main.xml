@@ -40,6 +40,7 @@
             android:text="@string/main_quetions" />
 
         <RadioButton
+
             android:id="@+id/rb_bottom_navigation_exchange"
             style="@style/HomeActivity_style"
             android:drawableTop="@drawable/selector_exchange"

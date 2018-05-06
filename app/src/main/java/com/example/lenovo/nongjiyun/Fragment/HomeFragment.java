@@ -14,12 +14,6 @@ import com.example.lenovo.nongjiyun.Adapter.GridAdapter;
 import com.example.lenovo.nongjiyun.Model.HomeMenu;
 import com.example.lenovo.nongjiyun.R;
 import com.example.lenovo.nongjiyun.view.myGridView;
-import com.jude.rollviewpager.RollPagerView;
-import com.jude.rollviewpager.adapter.StaticPagerAdapter;
-import com.jude.rollviewpager.hintview.ColorPointHintView;
-import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.util.ArrayList;
 
@@ -37,9 +31,9 @@ public class HomeFragment extends Fragment {
     private myGridView gv_home;
 //    private myListView listmenu;
     private ArrayList<HomeMenu> menus;
-    private RefreshLayout refreshLayout;
+   /* private RefreshLayout refreshLayout;
     private RollPagerView mRollViewPager;
-    private GridAdapter adapter;
+    private GridAdapter adapter;*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,20 +46,20 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         gv_home =  view.findViewById(R.id.gv_home);
-        mRollViewPager =  view.findViewById(R.id.roll_view_pager);
-        refreshLayout =  view.findViewById(R.id.refreshLayout);
+       /* mRollViewPager =  view.findViewById(R.id.roll_view_pager);
+        refreshLayout =  view.findViewById(R.id.refreshLayout);*/
 //        listmenu=view.findViewById(R.id.lv_home_news);
         menus =new ArrayList<>();
-        refsresh();
+        /*refsresh();*/
         initGridView();
         //设置播放时间间隔
 
         //启动适配器，加载到布局中
 //        listViewNewsAdapter = new ListViewNewsAdapter(null, getActivity());
 //        listmenu.setAdapter(listViewNewsAdapter);
-
+/*
         adapter=new GridAdapter(getActivity(), menus);
-        gv_home.setAdapter(adapter);
+        gv_home.setAdapter(adapter);*/
         }
 
     private void initGridView() {
@@ -80,17 +74,17 @@ public class HomeFragment extends Fragment {
         menus.add(new HomeMenu(R.mipmap.ic_launcher_round,"更多",null));
     }
 
-    private void refsresh() {
+   /* private void refsresh() {
         refreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
-                refreshlayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
+                refreshlayout.finishRefresh(2000*//*,false*//*);//传入false表示刷新失败
             }
         });
         refreshLayout.setOnLoadmoreListener(new OnLoadmoreListener() {
             @Override
             public void onLoadmore(RefreshLayout refreshlayout) {
-                refreshlayout.finishLoadmore(2000/*,false*/);//传入false表示加载失败
+                refreshlayout.finishLoadmore(2000*//*,false*//*);//传入false表示加载失败
             }
         });
         mRollViewPager.setPlayDelay(1000);
@@ -122,7 +116,7 @@ public class HomeFragment extends Fragment {
         public int getCount() {
             return imgs.length;
         }
-    }
+    }*/
 }
 
 
