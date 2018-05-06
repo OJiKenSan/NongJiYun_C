@@ -4,6 +4,7 @@ import cn.bmob.v3.BmobObject;
 
 public class PlaceItem extends BmobObject {
     private String placename;
+
 public PlaceItem(){
 
 }
