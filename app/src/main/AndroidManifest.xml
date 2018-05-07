@@ -33,9 +33,9 @@
     <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!-- 获取sd卡写的权限，用于文件上传和下载 -->
-   <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera2"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera2" />
 
     <!-- 允许读取手机状态 用于创建BmobInstallation -->
     <uses-permission android:name="android.permission.SEND_SMS" />
@@ -48,10 +48,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoTitle">
 
-
-        <!--<meta-data
+        <!--
+            <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="7df2cad396177e675a8401a4aa17103c" />-->
+            android:value="7df2cad396177e675a8401a4aa17103c" />
+        -->
         <!--
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -70,12 +71,7 @@
             />
         -->
         <activity android:name=".Activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Activity.WelcomeActivity" />
         <activity android:name=".Activity.LeadPageActivity" />
@@ -89,10 +85,15 @@
         <activity android:name=".Activity.AboutActivity" />
         <activity android:name=".Activity.MyDataActivity" />
         <activity android:name=".Activity.PushActivity" />
-        <activity android:name=".Activity.EditProfileActivity">
+        <activity android:name=".Activity.EditProfileActivity"></activity>
+        <activity android:name=".Activity.EditModelActivity" />
+        <activity android:name=".Activity.WeahterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".Activity.EditModelActivity"></activity>
     </application>
 
 </manifest>
