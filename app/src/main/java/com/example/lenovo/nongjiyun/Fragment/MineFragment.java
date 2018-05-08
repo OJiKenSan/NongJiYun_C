@@ -16,7 +16,11 @@ import android.widget.TextView;
 import com.example.lenovo.nongjiyun.Activity.AboutActivity;
 import com.example.lenovo.nongjiyun.Activity.InstallActivity;
 import com.example.lenovo.nongjiyun.Activity.LoginActivity;
+import com.example.lenovo.nongjiyun.Activity.QrCodeActivity;
 import com.example.lenovo.nongjiyun.Activity.ResponseActivity;
+import com.example.lenovo.nongjiyun.Activity.Response_exchange_TrainActivity;
+import com.example.lenovo.nongjiyun.Activity.ShareActivity;
+import com.example.lenovo.nongjiyun.Activity.Tab_Concentrate_Demand_AskActivity;
 import com.example.lenovo.nongjiyun.R;
 import com.example.lenovo.nongjiyun.Util.SharedPreferencesHelper;
 import com.example.lenovo.nongjiyun.Util.ToastMessage;
@@ -36,6 +40,10 @@ private int TAG=1;
 private RadioButton rb_mine_qrcode;
 private RadioButton rb_mine_ask;
 private RadioButton rb_mine_collect;
+private RadioButton rb_mine_train;
+private RadioButton rb_mine_exchange;
+private RadioButton rb_mine_concentrate;
+private RadioButton rb_mine_demand;
     private RadioButton rb_mine_answer;
     public MineFragment() {
         // Required empty public constructor
@@ -63,10 +71,17 @@ private RadioButton rb_mine_collect;
         rb_mine_answer=(RadioButton)view.findViewById(R.id.rb_mine_answer);
         rb_mine_qrcode=(RadioButton)view.findViewById(R.id.rb_mine_qrcode);
         tv_mine_score=(TextView)view.findViewById(R.id.tv_mine_score);
+        rb_mine_exchange=(RadioButton)view.findViewById(R.id.rb_mine_exchange);
         tv_mine_sign=(TextView)view.findViewById(R.id.tv_mine_sign);
+        rb_mine_train=(RadioButton)view.findViewById(R.id.rb_mine_train);
+        rb_mine_concentrate=(RadioButton)view.findViewById(R.id.rb_mine_concentrate);
+        rb_mine_demand=(RadioButton)view.findViewById(R.id.rb_mine_demand);
+train();
+demand();
         exits();
         answer();
         qrcode();
+        concentrate();
         initinstall();
         initlogin();
         initmall();
@@ -74,6 +89,88 @@ private RadioButton rb_mine_collect;
         initshare();
         ask();
         collect();
+         exchange();
+    }
+
+    private void demand() {
+        rb_mine_demand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+                    Intent i=new Intent(getActivity(),Tab_Concentrate_Demand_AskActivity.class);
+                    i.putExtra("titlename","我的供求");
+                    i.putExtra("left","供应");
+                    i.putExtra("right","求购");
+                    startActivity(i);
+
+
+                }else {
+                    Intent i=new Intent(getActivity(),LoginActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
+    }
+
+    private void concentrate() {
+rb_mine_concentrate.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+        if (sharedPreferencesHelper.contain("userId")){
+
+            Intent i=new Intent(getActivity(),Tab_Concentrate_Demand_AskActivity.class);
+            i.putExtra("titlename","我的关注");
+            i.putExtra("left","快速提问");
+            i.putExtra("right","专家提问");
+            startActivity(i);
+
+
+        }else {
+            Intent i=new Intent(getActivity(),LoginActivity.class);
+            startActivity(i);
+        }
+    }
+});
+    }
+
+    private void exchange() {
+        rb_mine_exchange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+
+                    Intent i=new Intent(getActivity(),Response_exchange_TrainActivity.class);
+                    i.putExtra("titlename","我的交流");
+                    startActivity(i);
+
+                }else {
+                    Intent i=new Intent(getActivity(),LoginActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
+    }
+
+    private void train() {
+        rb_mine_train.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+
+                    Intent i=new Intent(getActivity(),Response_exchange_TrainActivity.class);
+                    i.putExtra("titlename","我的培训班");
+                    startActivity(i);
+
+                }else {
+                    Intent i=new Intent(getActivity(),LoginActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
     }
 
     private void collect() {
@@ -92,7 +189,17 @@ private RadioButton rb_mine_collect;
         rb_mine_ask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (TAG==1){
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+
+                    Intent i=new Intent(getActivity(),Tab_Concentrate_Demand_AskActivity.class);
+                    i.putExtra("titlename","我的提问");
+                    i.putExtra("left","快速提问");
+                    i.putExtra("right","专家提问");
+                    startActivity(i);
+
+
+                }else {
                     Intent i=new Intent(getActivity(),LoginActivity.class);
                     startActivity(i);
                 }
@@ -106,7 +213,14 @@ private RadioButton rb_mine_collect;
         rb_mine_answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (TAG==1){
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+
+                    Intent i=new Intent(getActivity(),Response_exchange_TrainActivity.class);
+                    i.putExtra("titlename","我的回答");
+                    startActivity(i);
+
+                }else {
                     Intent i=new Intent(getActivity(),LoginActivity.class);
                     startActivity(i);
                 }
@@ -119,7 +233,13 @@ private RadioButton rb_mine_collect;
         rb_mine_qrcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (TAG==1){
+                SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
+                if (sharedPreferencesHelper.contain("userId")){
+                    String userId= (String) sharedPreferencesHelper.get("userId","1");
+                    Intent i=new Intent(getActivity(),QrCodeActivity.class);
+                    i.putExtra("userId",userId);
+                    startActivity(i);
+                }else {
                     Intent i=new Intent(getActivity(),LoginActivity.class);
                     startActivity(i);
                 }
@@ -130,9 +250,7 @@ private RadioButton rb_mine_collect;
 
     private void exits() {
         SharedPreferencesHelper sharedPreferencesHelper=new SharedPreferencesHelper(getActivity());
-        if (sharedPreferencesHelper.contain("phonenum")){
-            TAG=2;
-          /*  btn_mine_login.setBackgroundResource(R.mipmap.ic_launcher);*/
+        if (sharedPreferencesHelper.contain("userId")){
             tv_mine_sign.setText("连续登录"+3+"天");
             tv_mine_score.setText(2+"积分");
         }
@@ -142,8 +260,10 @@ private RadioButton rb_mine_collect;
         rb_mine_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getActivity(), LoginActivity.class);
-                startActivity(i);
+                    Intent i=new Intent(getActivity(), ShareActivity.class);
+                    startActivity(i);
+
+
             }
         });
 

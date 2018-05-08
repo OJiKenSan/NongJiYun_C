@@ -71,7 +71,11 @@
             />
         -->
         <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Activity.WelcomeActivity" />
         <activity android:name=".Activity.LeadPageActivity" />
@@ -85,15 +89,13 @@
         <activity android:name=".Activity.AboutActivity" />
         <activity android:name=".Activity.MyDataActivity" />
         <activity android:name=".Activity.PushActivity" />
-        <activity android:name=".Activity.EditProfileActivity"></activity>
+        <activity android:name=".Activity.EditProfileActivity" />
         <activity android:name=".Activity.EditModelActivity" />
-        <activity android:name=".Activity.WeahterActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Activity.WeahterActivity" />
+        <activity android:name=".Activity.QrCodeActivity" />
+        <activity android:name=".Activity.ShareActivity" />
+        <activity android:name=".Activity.Response_exchange_TrainActivity" />
+        <activity android:name=".Activity.Tab_Concentrate_Demand_AskActivity"></activity>
     </application>
 
 </manifest>

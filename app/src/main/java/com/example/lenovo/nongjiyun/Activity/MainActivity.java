@@ -114,6 +114,12 @@ public class MainActivity extends AppCompatActivity {
           RadioButton rb_bottom_navigation_exchange= (RadioButton) findViewById(R.id.rb_bottom_navigation_exchange);
                     rb_bottom_navigation_exchange.setChecked(true);
         };
+        if (i.hasExtra("minetag")){
+
+            changeFragment(new MineFragment());
+            RadioButton rb_bottom_navigation_mine= (RadioButton) findViewById(R.id.rb_bottom_navigation_mine);
+            rb_bottom_navigation_mine.setChecked(true);
+        };
     }
 
 
